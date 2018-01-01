@@ -1,0 +1,22 @@
+.fw-main-row {
+  background-position: center;
+  background-size: cover;
+}
+.product-banner {
+  display: flex;
+  height: 600px;
+  align-items: center;
+  &-txt-header {
+    max-width: 600px;
+    font-size: 60px;
+    line-height: 1;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 635px) {
+  .product-banner {
+    &-txt-header {
+      font-size: 25px;
+    }
+  }
+}

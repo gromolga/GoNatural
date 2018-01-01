@@ -1,0 +1,138 @@
+.our-blog {
+  padding: 50px 0;
+  &-box {
+    display: flex;
+    &-link {
+      text-decoration: none;
+      line-height: 1;
+      &:hover {
+        color: $dark-main-color;
+      }
+    }
+  }
+  &-left-col {
+    position: relative;
+    width: 60%;
+    &-header {
+      display: block;
+      margin-left: 110px;
+      margin-bottom: 30px;
+      line-height: 1;
+      text-decoration: none;
+    }
+    &-label {
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+  }
+  &-right-col {
+    width: 40%;
+    &-header {
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1;
+      text-decoration: none;
+    }
+  }
+  &-article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &-img {
+      height: 200px;
+      width: 350px;
+      position: relative;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &-txt {
+      width: calc(100% - 300px);
+      padding: 20px;
+    }
+    &-link {
+      display: inline-block;
+      font-size: 20px;
+      text-decoration: none;
+      &:hover {
+        &:before {
+          background-color: $dark-main-color;
+        }
+        > * {
+          color: $dark-main-color;
+          background-color: $dark-main-color;
+        }
+      }
+      &-top {
+        font-size: 20px;
+        color: $base-color;
+      }
+      &-bottom {
+        display: inline-block;
+        padding-right: 30px;
+        position: relative;
+        color: $main-color;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          height: 22px;
+          width: 22px;
+          border-radius: 50%;
+          background-color: $main-color;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 8px;
+          transform: translateY(-50%) rotate(45deg);
+          height: 5px;
+          width: 5px;
+          border-right: 3px solid #fff;
+          border-top: 3px solid #fff;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .our-blog{
+    &-box {
+      display: block;
+    }
+    &-left-col {
+      width: 100%;
+    }
+    &-right-col {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .our-blog-article {
+    display: block;
+    &-img {
+      margin: auto;
+      max-width: 350px;
+      width: 100%;
+    }
+    &-txt {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &-link-top {
+      display: block;
+    }
+  }
+}

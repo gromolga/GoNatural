@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  color: $base-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: "MEDIATORSERIF",sans-serif;
+}
+.inline-block-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0;
+  line-height: 0;
+}
+.inline-block-item {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.wrapper {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+input, button {
+  outline: none;
+}
+.main-btn {
+  display: block;
+  text-align: center;
+  &-box {
+    margin: 5px 0;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    color: $main-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $hover-bg-btn-color;
+    }
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Gotham Pro",serif;
+  line-height: 1.5;
+  color: $main-color;
+}
+h1, .h1 {
+  font-size: 44px;
+}
+h2, .h2 {
+  font-size: 44px;
+}
+h3, .h3 {
+  font-size: 38px;
+}
+h4, .h4 {
+  font-size: 32px;
+}
+h5, .h5 {
+  font-size: 28px;
+}
+h6, .h6 {
+  font-size: 20px;
+}
+
+
+//EXTENDS
+%inline-block-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+%inline-block-item {
+  display: inline-block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  h1, .h1 {
+    font-size: 34px;
+  }
+  h2, .h2 {
+    font-size: 28px;
+  }
+  h3, .h3 {
+    font-size: 24px;
+  }
+  h4, .h4 {
+    font-size: 20px;
+  }
+  h5, .h5 {
+    font-size: 18px;
+  }
+  h6, .h6 {
+    font-size: 16px;
+  }
+}
+
+
+

@@ -1,0 +1,14 @@
+.fw-main-row {
+    background-position: center;
+    background-size: cover;
+}
+.product-banner {
+    display: flex;
+    height: 600px;
+    align-items: center;
+}
+.product-banner-txt-header {
+    max-width: 600px;
+    line-height: 1;
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+.main-banner {
+  &-slide {
+    display: flex;
+    min-height: 750px;
+    background-size: cover;
+    background-position: center;
+    &-content {
+      padding: 50px 15px;
+      text-align: center;
+      &-header {
+        margin: 10px auto;
+        color: #fff;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+  }
+  .owl-dot {
+    margin: 0 3px;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+  }
+  .owl-dot.active {
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 470px) {
+  .main-banner {
+    &-slide {
+      min-height: 430px;
+    }
+  }
+}

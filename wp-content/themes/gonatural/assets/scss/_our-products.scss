@@ -1,0 +1,151 @@
+.our-products {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+  }
+  &-container {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+  }
+  &-item {
+    float: left;
+    height: 520px;
+    width: 25%;
+    overflow: hidden;
+    box-sizing: border-box;
+    .frame-1 {
+      margin-top: 0;
+      transition: margin-top .5s;
+    }
+    &:hover {
+      .frame-1 {
+        margin-top: -520px;
+        transition: margin-top .5s;
+      }
+    }
+  }
+  &-bottom-box {
+    margin-top: -5px;
+    padding: 50px 0;
+    background-color: $second-main-color;
+    &-content {
+      height: 200px;
+      overflow: hidden;
+      font-size: 20px;
+      .frame-3 {
+        margin-top: 0;
+        transition: .5s;
+      }
+    }
+    &-img {
+      height: auto;
+      width: 150px;
+    }
+    &:hover {
+      .frame-3 {
+        margin-top: -200px;
+        transition: .5s;
+      }
+    }
+  }
+  &-bottom-content {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.frame-content {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  &-img {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+  }
+  &-bottom {
+    display: flex;
+    align-items: center;
+    &-gallery {
+      width: 690px;
+    }
+    &-content {
+      width: calc(100% - 690px);
+    }
+  }
+}
+.frame-1,
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  height: 520px;
+}
+.frame-3,
+.frame-4 {
+  //display: flex;
+  height: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .our-products-bottom-box-img {
+    width: 125px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .frame-content {
+    &-bottom {
+      display: block;
+      &-gallery {
+        width: 100%;
+      }
+      &-content {
+        width: 100%;
+      }
+    }
+  }
+  .our-products-bottom-box-content {
+    height: 240px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .our-products {
+    &-item {
+      margin-top: 0;
+      float: left;
+      height: 520px;
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 660px) {
+  .our-products-bottom-box-img {
+    width: 100px;
+  }
+  .our-products-bottom-box-content {
+    height: 190px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .our-products {
+    &-item {
+      margin-top: 0;
+      float: left;
+      height: 520px;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .our-products-bottom-box-img {
+    width: 60px;
+  }
+}
