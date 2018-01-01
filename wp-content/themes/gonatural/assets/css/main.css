@@ -1003,11 +1003,7 @@ article.main-content {
 
 @media screen and (max-width: 635px) {
   .product-banner-txt-header {
-    font-size: 45px; } }
-
-@media screen and (max-width: 420px) {
-  .product-banner-txt-header {
-    font-size: 30px; } }
+    font-size: 25px; } }
 
 .product-grid_bgc-main {
   background-color: #ccc; }
@@ -1022,28 +1018,38 @@ article.main-content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
 
 .product-item {
-  margin: 15px;
+  width: 20%;
   text-align: center; }
   .product-item-header {
-    margin: 10px 0;
     font-size: 20px;
-    color: #000; }
+    color: #412800; }
   .product-item-more {
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 2;
     color: #dd6f27; }
     .product-item-more:after {
       content: '+';
       position: absolute;
+      top: 50%;
       right: -25px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
       line-height: 20px;
       width: 20px;
+      font-size: 20px;
       -webkit-border-radius: 50%;
               border-radius: 50%;
-      font-size: 25px;
       background-color: #dd6f27;
       color: #fff; }
 
@@ -1137,8 +1143,7 @@ article.main-content {
 
 @media screen and (max-width: 991px) {
   .product-navigation {
-    display: block;
-    padding-top: 0; }
+    display: block; }
     .product-navigation-left-col {
       width: 100%;
       position: relative;
@@ -1153,10 +1158,6 @@ article.main-content {
         background-color: silver; }
     .product-navigation-right-col {
       width: 100%; } }
-
-@media screen and (max-width: 767px) {
-  .product-navigation {
-    display: none; } }
 
 @media screen and (max-width: 635px) {
   .product-navigation-right-col {

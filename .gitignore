@@ -2,3 +2,4 @@
 .idea
 /.htaccess
 /wp-content/uploads
+node_modules
