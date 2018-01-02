@@ -1,6 +1,5 @@
 .header {
   padding-top: 10px;
-  //padding: 10px 0;
   &-top-line {
     position: relative;
     z-index: 10;
@@ -120,14 +119,18 @@
   :-ms-input-placeholder      {color:$main-color;}
 }
 .menu-navigaciya-v-shapke-sajta-container {
-  display: inline-block;
+  float: left;
+  margin: 7px 0 0 0;
+  width: calc(100% - 35px);
+  padding: 0 15px;
+  box-sizing: border-box;
 }
-
-
-.petcurean-logo {
-  font-size: 60px;
+@media screen and (max-width: 1200px) {
+  .menu-navigaciya-v-shapke-sajta-container {
+    text-align: left;
+  }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .header {
     &-nav-container {
       float: none;
@@ -143,7 +146,7 @@
     }
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 867px) {
   .header {
     padding-top: 0;
     &-top-line-img {
