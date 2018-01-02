@@ -25,8 +25,35 @@ $(function () {
 
     $(".product-navigation-left-col-img-box").hover(function() {
         $( ".product-navigation-left-col-img-box" ).not(this).toggleClass( "product-navigation-left-col-img-box-layout" );
-        $(this).toggleClass('fuck');
     });
+
+    // Аккордеон
+
+    $(".accordeon-item").click(function() {
+       $(this).children(".accordeon-item-dropdown").slideToggle();
+        // if($(this).children(".accordeon-item-txt-plus").data('status') === "on") {
+        //     $(this).children(".accordeon-item-txt-plus").data('status', "off");
+        // };
+    });
+
+
+    // $(".questions-list-item-plus").click(function(){
+    //     var $this = $(this),
+    //         text = $this.siblings('.more-text');
+    //     if($this.data('status') === "on") {
+    //         text.slideDown(function(){
+    //             $this.text($this.data("off"));
+    //             $this.data('status', "off");
+    //         });
+    //     } else {
+    //         text.slideUp(function(){
+    //             $this.text($this.data("on"));
+    //             $this.data('status', "on");
+    //         });
+    //     }
+    // });
+
+
 })
 
 // Социальные кнопки поделиться

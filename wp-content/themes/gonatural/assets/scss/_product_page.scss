@@ -1,0 +1,63 @@
+.product-description {
+  padding: 50px 0;
+  font-size: 20px;
+  background-color: #ffc300;
+  .h1 {
+    margin: 0;
+    font-size: 70px;
+    line-height: 1;
+    color: #dc489b;
+  }
+  .h4 {
+    margin: 0;
+    font-family: "MEDIATORSERIF",sans-serif;
+    font-weight: normal;
+    color: #b6a269;
+  }
+  .h6 {
+    margin: 0;
+    font-size: 25px;
+    font-family: "MEDIATORSERIF",sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    color: inherit;
+  }
+  .facebook-share-btn {
+    top: -4px;
+  }
+  &-flexbox {
+    display: flex;
+  }
+  &-img {
+    position: relative;
+    width: 100%;
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .product-description {
+    font-size: 16px;
+    &-flexbox {
+      display: block;
+    }
+    &-img {
+      position: static;
+      img {
+        position: static;
+        margin: auto;
+      }
+    }
+    .h1 {
+      font-size: 35px;
+    }
+    .h6 {
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+}
