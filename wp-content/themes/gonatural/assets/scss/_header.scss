@@ -84,6 +84,10 @@
   }
   &-search {
     &-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 20;
       background-color: $light-main-color;
     }
     &-field {

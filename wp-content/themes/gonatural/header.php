@@ -72,7 +72,7 @@
                 <form role="search" method="get" class="search-form form-inline" action="#">
                     <div class="header-input-group">
                         <input type="search" class="header-search-field" placeholder="type to search...">
-                        <span class="header-search-btn">
+                        <span class="header-search-btn" style="display: none">
                           <button type="submit" class="header-search-btn-submit">Search</button>
                         </span>
                     </div>

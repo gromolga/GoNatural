@@ -1,42 +1,31 @@
 <?php get_header(); ?>
-
 <div class="wrapper">
     <div class="product-navigation">
         <div class="product-navigation-left-col">
             <div class="product-navigation-left-col-txt">
-                Види продуктiв:
+                <?php echo gd_get_post_option("left_txt") ?>
             </div>
             <div class="product-navigation-left-col-img">
+                <?php $img_items = gd_get_post_option('img_items'); ?>
+                <?php if($img_items) : ?>
                 <ul class="product-navigation-left-col-img-list">
+                    <?php foreach ($img_items as $item): ?>
                     <li class="product-navigation-left-col-img-box">
                         <a href="#">
-                            <img src="<?php echo gd_get_img('Summit-Cats-Indoor.png') ?>" alt="">
+                            <img src="<?php gd_eh_array(gd_get_array($item, 'img'), 'url') ?>" alt="">
                         </a>
                     </li>
-                    <li class="product-navigation-left-col-img-box">
-                        <a href="#">
-                            <img src="<?php echo gd_get_img('Summit-Cats-Indoor.png') ?>" alt="">
-                        </a>
-                    </li>
-                    <li class="product-navigation-left-col-img-box">
-                        <a href="#">
-                            <img src="<?php echo gd_get_img('Summit-Cats-Indoor.png') ?>" alt="">
-                        </a>
-                    </li>
-                    <li class="product-navigation-left-col-img-box">
-                        <a href="#">
-                            <img src="<?php echo gd_get_img('Summit-Cats-Indoor.png') ?>" alt="">
-                        </a>
-                    </li>
+                    <?php endforeach; ?>
                 </ul>
+                <?php endif; ?>
             </div>
         </div>
         <div class="product-navigation-right-col">
             <div class="product-navigation-right-col-txt">
-                Потрiбна порада у виборi правильного харчування?
+                <?php echo gd_get_post_option("right_txt") ?>
             </div>
             <div class="product-navigation-right-col-btn">
-                <a href="#">Скористайтеся нашим помiчником</a>
+                <a href="#"><?php echo gd_get_post_option("button_txt") ?></a>
             </div>
         </div>
     </div>
@@ -44,24 +33,9 @@
 <div class="product-description">
     <div class="wrapper product-description-flexbox">
         <div class="product-description-content">
-            <h4 class="h4">SUMMIT</h4>
-            <h1 class="h1">THREE MEAT INDOOR CAT RECIPE</h1>
-            <p>SUMMIT™ Three Meat Indoor Cat Recipe was created by epicureans with select premium ingredients, for
-                delicious
-                taste and exceptional health benefits, including help with hairball prevention.</p>
-            <h6 class="h6">
-                This recipe also features:
-            </h6>
-            <ul>
-                <li>Three meat proteins (chicken, salmon and turkey) for maximum flavour</li>
-                <li>Pea fibre to support the prevention of hair balls</li>
-                <li>Balanced omega oils to promote skin and coat wellness</li>
-                <li>Antioxidants to support increased immunity</li>
-                <li>ZERO beef, wheat, corn or soy</li>
-                <li>ZERO added growth hormones, zero by-product meals or artificial preservatives</li>
-            </ul>
-            <p>Available in 4lb and 15lb bag sizes.</p>
-            <p>Only available in Canada.</p>
+            <h4 class="h4"><?php echo gd_get_post_option("small_header") ?></h4>
+            <h1 class="h1"><?php echo gd_get_post_option("large_header") ?></h1>
+            <p><?php echo gd_get_post_option("content") ?></p>
             <a class="main-btn" href="#">
                 <a class="main-btn-box">Where to buy</a>
             </a>
@@ -89,7 +63,6 @@
     <ul class="accordeon-list">
         <li class="accordeon-item">
             <div class="wrapper">
-                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">-</div>
                 <div class="accordeon-item-txt">Інгрідієнти</div>
             </div>
             <div class="accordeon-item-dropdown">
@@ -110,7 +83,6 @@
         </li>
         <li class="accordeon-item">
             <div class="wrapper">
-                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">-</div>
                 <div class="accordeon-item-txt">Рекомендації щодо щоденного харчування</div>
             </div>
             <div class="accordeon-item-dropdown">
@@ -132,7 +104,6 @@
         </li>
         <li class="accordeon-item">
             <div class="wrapper">
-                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">-</div>
                 <div class="accordeon-item-txt">Гарантований аналіз</div>
             </div>
             <div class="accordeon-item-dropdown">

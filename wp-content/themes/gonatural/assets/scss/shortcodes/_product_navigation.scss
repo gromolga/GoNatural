@@ -1,7 +1,7 @@
 .product-navigation {
   position: relative;
   display: flex;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   &-left-col,
   &-right-col {
     display: flex;
@@ -81,6 +81,7 @@
   &:before {
     content: '';
     position: absolute;
+    top: 0;
     left: -9999px;
     right: -9999px;
     height: 1px;
@@ -96,7 +97,7 @@
     background-color: silver;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .product-navigation {
     display: block;
     &-left-col {
@@ -116,6 +117,11 @@
     &-right-col {
       width: 100%;
     }
+  }
+}
+@media screen and (max-width: 767px) {
+  .product-description-img {
+    text-align: center;
   }
 }
 @media screen and (max-width: 635px) {

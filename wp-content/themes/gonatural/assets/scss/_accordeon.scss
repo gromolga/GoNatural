@@ -16,16 +16,25 @@
     &-txt {
       position: relative;
       padding: 35px 70px 35px 0;
-      &:before {
-        content: '+';
+      &:before,
+      &:after {
+        content: '';
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        background-color: #fff;
+      }
+      &:before {
         right: 0;
-        line-height: 50px;
-        width: 50px;
-        font-size: 50px;
-        color: #fff;
+        height: 6px;
+        width: 30px;
+      }
+      &:after {
+        right: 12px;
+        height: 30px;
+        width: 6px;
+        opacity: 1;
+        transition: .1s;
       }
     }
     &:hover {
@@ -46,6 +55,15 @@
     }
   }
 }
+.accordeon-item.active {
+  .accordeon-item-txt {
+    &:after {
+      opacity: 0;
+      transition: .1s;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .accordeon {
     &-item {

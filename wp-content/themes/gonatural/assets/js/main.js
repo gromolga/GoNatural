@@ -10,7 +10,7 @@ $(function () {
     // Поиск
 
     $("#header-nav-search").click(function () {
-        $(".header-search-wrapper").slideToggle();
+        $(".header-search-wrapper, .header-search-btn").slideToggle();
     })
 
     // Карусель на главной странице
@@ -29,23 +29,15 @@ $(function () {
 
     // Аккордеон
 
-    // $(".accordeon-item").click(function() {
-    //    $(this).children(".accordeon-item-dropdown").slideToggle();
-    // });
-
-
-    $(".accordeon-item").click(function(){
-        if($(this).find(".accordeon-item-txt-plus").data('status') === "on") {
-            $(this).find(".accordeon-item-dropdown").slideDown(function(){
-                $(this).find(".accordeon-item-txt-plus").data("off");
-                $(this).find(".accordeon-item-txt-plus").data('status', "off");
-            });
+    $(".accordeon-item").click(function() {
+        if($(this).hasClass('active')) {
+            $(".accordeon-item").removeClass('active');
         } else {
-            $(this).find(".accordeon-item-dropdown").slideUp(function() {
-                $(this).find(".accordeon-item-txt-plus").data("on");
-                $(this).find(".accordeon-item-txt-plus").data('status', "on");
-            });
+            $(".accordeon-item").removeClass('active');
+            $(this).addClass("active");
         }
+        $(".accordeon-item:not(.active) .accordeon-item-dropdown").slideUp();
+        $(".accordeon-item.active .accordeon-item-dropdown").slideDown();
     });
 
 
