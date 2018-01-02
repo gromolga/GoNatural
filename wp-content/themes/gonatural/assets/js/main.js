@@ -29,29 +29,24 @@ $(function () {
 
     // Аккордеон
 
-    $(".accordeon-item").click(function() {
-       $(this).children(".accordeon-item-dropdown").slideToggle();
-        // if($(this).children(".accordeon-item-txt-plus").data('status') === "on") {
-        //     $(this).children(".accordeon-item-txt-plus").data('status', "off");
-        // };
-    });
-
-
-    // $(".questions-list-item-plus").click(function(){
-    //     var $this = $(this),
-    //         text = $this.siblings('.more-text');
-    //     if($this.data('status') === "on") {
-    //         text.slideDown(function(){
-    //             $this.text($this.data("off"));
-    //             $this.data('status', "off");
-    //         });
-    //     } else {
-    //         text.slideUp(function(){
-    //             $this.text($this.data("on"));
-    //             $this.data('status', "on");
-    //         });
-    //     }
+    // $(".accordeon-item").click(function() {
+    //    $(this).children(".accordeon-item-dropdown").slideToggle();
     // });
+
+
+    $(".accordeon-item").click(function(){
+        if($(this).find(".accordeon-item-txt-plus").data('status') === "on") {
+            $(this).find(".accordeon-item-dropdown").slideDown(function(){
+                $(this).find(".accordeon-item-txt-plus").data("off");
+                $(this).find(".accordeon-item-txt-plus").data('status', "off");
+            });
+        } else {
+            $(this).find(".accordeon-item-dropdown").slideUp(function() {
+                $(this).find(".accordeon-item-txt-plus").data("on");
+                $(this).find(".accordeon-item-txt-plus").data('status', "on");
+            });
+        }
+    });
 
 
 })

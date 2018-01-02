@@ -89,7 +89,7 @@
     <ul class="accordeon-list">
         <li class="accordeon-item">
             <div class="wrapper">
-                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">+</div>
+                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">-</div>
                 <div class="accordeon-item-txt">Інгрідієнти</div>
             </div>
             <div class="accordeon-item-dropdown">
@@ -110,7 +110,7 @@
         </li>
         <li class="accordeon-item">
             <div class="wrapper">
-                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">+</div>
+                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">-</div>
                 <div class="accordeon-item-txt">Рекомендації щодо щоденного харчування</div>
             </div>
             <div class="accordeon-item-dropdown">
@@ -132,7 +132,7 @@
         </li>
         <li class="accordeon-item">
             <div class="wrapper">
-                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">+</div>
+                <div class="accordeon-item-txt-plus" data-status="on" data-on="+" data-off="-">-</div>
                 <div class="accordeon-item-txt">Гарантований аналіз</div>
             </div>
             <div class="accordeon-item-dropdown">
