@@ -88,8 +88,9 @@
     </section>
     <div class="recomends">
         <div class="recomends-left-col recomends-article">
-            <div class="recomends-wrapper">
-                <a class="recomends-img-box" href="#" style="background-image: url(<?php echo gd_get_img('DogsLights_V1.png') ?>);">
+            <div class="recomends-wrapper scale-img">
+                <img src="<?php echo gd_get_img('PileofDogs_V1.png') ?>" alt="">
+                <a class="recomends-img-box" href="#">
                     <div class="recomends-txt">
                         <p>[Читати статтю]</p>
                     </div>
@@ -114,7 +115,8 @@
             </a>
         </div>
         <div class="recomends-center-col recomends-quote">
-            <div class="recomends-img-box" href="#" style="background-image: url(<?php echo gd_get_img('S0wnWaZrlGZoe15AJqf_y4KnLTFGmKBk_IQt75YlEew.jpeg') ?>);">
+            <div class="recomends-img-box scale-img" href="#">
+                <img src="<?php echo gd_get_img('S0wnWaZrlGZoe15AJqf_y4KnLTFGmKBk_IQt75YlEew.jpeg') ?>" alt="">
                 <blockquote>
                     "Я перевiв Моллi на <i>NOW FRESH™ Grain Free Senior</i> після отримання інформації по електронній пошті
                     від вашого представника... Тепер я впевнений, що вона отримує дiйсно хороше харчування. Це дуже важливо
@@ -142,8 +144,9 @@
             </a>
         </div>
         <div class="recomends-right-col recomends-article">
-            <div class="recomends-wrapper">
-                <a class="recomends-img-box" href="#" style="background-image: url(<?php echo gd_get_img('PileofDogs_V1.png') ?>);">
+            <div class="recomends-wrapper scale-img">
+                <img src="<?php echo gd_get_img('PileofDogs_V1.png') ?>" alt="">
+                <a class="recomends-img-box" href="#">
                     <div class="recomends-txt">
                         <p>[Читати статтю]</p>
                     </div>

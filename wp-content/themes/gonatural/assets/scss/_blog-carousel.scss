@@ -1,0 +1,20 @@
+.blog-main-banner {
+  margin-bottom: 30px;
+}
+.blog-slide {
+  position: relative;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  &-header {
+    line-height: 1;
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}

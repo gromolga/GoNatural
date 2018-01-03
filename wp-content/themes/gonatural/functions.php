@@ -151,3 +151,10 @@ function register_post_types()
 
     flush_rewrite_rules();
 }
+
+
+
+add_theme_support('post-thumbnails'); // включаем поддержку миниатюр
+set_post_thumbnail_size(250, 150); // задаем размер миниатюрам 250x150
+add_image_size('big-thumb', 337, 200, true); // добавляем еще один размер картинкам 400x400 с обрезкой
+add_image_size('slider-thumb', 780, 460, true); // добавляем еще один размер картинкам 400x400 с обрезкой

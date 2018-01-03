@@ -127,6 +127,9 @@ article.main-content {
   margin: auto;
   margin-bottom: 70px;
   width: calc(100% - 30px);
+  &-wrapper {
+    overflow: hidden;
+  }
   &-left-col,
   &-center-col,
   &-right-col {
@@ -159,8 +162,6 @@ article.main-content {
       align-content: center;
       overflow: hidden;
       box-sizing: border-box;
-      background-position: center;
-      background-size: cover;
       color: #fff;
       i {
         color: $main-color;
@@ -204,6 +205,16 @@ article.main-content {
     a {
       font-size: 12px;
     }
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    width: auto;
+    z-index: -10;
+    transition: transform .5s;
   }
 }
 @media screen and (max-width: 1070px) {

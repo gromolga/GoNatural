@@ -20,6 +20,7 @@
 </head>
 <header class="header">
     <div class="header-top-line">
+        <?php if ( function_exists( 'mltlngg_display_switcher' ) ) mltlngg_display_switcher(); ?>
         <div class="wrapper">
             <div class="header-top-line-img">
                 <img src="<?php gd_eh_array(gd_get_option('header_top_img', array()), 'url', gd_get_img('header-top-img.jpg')) ?>" alt="Petcurean">

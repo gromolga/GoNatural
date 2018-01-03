@@ -63,10 +63,6 @@
         &:before {
           background-color: $dark-main-color;
         }
-        > * {
-          color: $dark-main-color;
-          background-color: $dark-main-color;
-        }
       }
       &-top {
         font-size: 20px;
