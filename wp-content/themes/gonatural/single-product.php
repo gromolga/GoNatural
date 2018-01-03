@@ -125,6 +125,9 @@
         </li>
     </ul>
 </div>
+<div class="wrapper">
+    <?php get_template_part('parts/archive/post_list') ?>
+</div>
 
 
 <?php get_footer(); ?>

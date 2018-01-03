@@ -13,17 +13,18 @@
     <section class="wrapper">
         <article class="main-content">
             <ul class="inline-block-list article-nav">
+                <?php foreach (wp_get_post_categories(get_the_ID(), array('fields' => 'all')) as $category) : ?>
+                    <?php if($category->slug != 'all') : ?>
+                        <li class="inline-block-item">
+                            <a href="<?php echo get_category_link($category) ?>"><?php echo $category->name ?></a>
+                        </li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
                 <li class="inline-block-item">
-                    <a href="#">Коти</a>
-                </li>
-                <li class="inline-block-item">
-                    <a href="#">Собаки</a>
-                </li>
-                <li class="inline-block-item">
-                    Грудень 21, 2017
+                    <?php echo get_the_date('M d, Y'); ?>
                 </li>
             </ul>
-            <?php $currentPage = get_post() ?>
+            <?php $currentPage = get_post(); ?>
             <h1 class="article-header"><?php echo $currentPage->post_title ?></h1>
 
             <div class="article-authors-info">
@@ -31,16 +32,12 @@
                     <img src="<?php echo gd_get_img('Val-Blog.jpg')?: gd_get_img('fallback-avatar.jpg') ?>" alt="">
                 </div>
                 <div class="article-authors-name">
-                    <span>Тамара Петрiвна</span>
+                    <span><?php echo "Тамара Петровна" ?></span>
                 </div>
             </div>
-            <?php $img = get_field('blog_main_image'); if($img): ?>
-                <div class="article-main-image">
-                    <img src="<?php echo $img["url"] ?>"
-                         title="<?php echo $img["title"] ?>"
-                         alt="<?php echo $img["alt"] ?>">
-                </div>
-            <?php endif; ?>
+            <div class="article-main-image">
+                <?php the_post_thumbnail('full'); ?>
+            </div>
             <div class="article-wrap">
                 <div class="typography">
                     <?php echo $currentPage->post_content ?>
@@ -48,14 +45,14 @@
                 <div class="article-nav-bottom">
                     <span>Опублiковано в:</span>
                     <ul class="inline-block-list article-nav article-nav-bottom-box">
-                        <li class="inline-block-item">
-                            <a href="#">Коти</a>
-                        </li>
-                        <li class="inline-block-item">
-                            <a href="#">Собаки</a>
-                        </li>
+                        <?php if($category->slug != 'all') : ?>
+                            <li class="inline-block-item">
+                                <a href="<?php echo get_category_link($category) ?>"><?php echo $category->name ?></a>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
+                <?php /**
                 <div class="article-nav-bottom">
                     <span>Позначено тегом:</span>
                     <ul class="inline-block-list article-nav article-nav-bottom-box">
@@ -73,6 +70,7 @@
                         </li>
                     </ul>
                 </div>
+ */ ?>
                 <div class="share-buttons">
                     <div class="facebook-share-btn">
                         <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="small" data-mobile-iframe="true">
@@ -86,91 +84,8 @@
             </div>
         </article>
     </section>
-    <div class="recomends">
-        <div class="recomends-left-col recomends-article">
-            <div class="recomends-wrapper scale-img">
-                <img src="<?php echo gd_get_img('PileofDogs_V1.png') ?>" alt="">
-                <a class="recomends-img-box" href="#">
-                    <div class="recomends-txt">
-                        <p>[Читати статтю]</p>
-                    </div>
-                </a>
 
-            </div>
-            <a class="recomends-article-links" href="#">
-                <ul class="inline-block-list article-nav recomends-links">
-                    <li class="inline-block-item">
-                        <a href="#">Коти</a>
-                    </li>
-                    <li class="inline-block-item">
-                        <a href="#">Собаки</a>
-                    </li>
-                    <li class="inline-block-item">
-                        <a href="#">Здоров'я та харчування</a>
-                    </li>
-                </ul>
-            </a>
-            <a class="recomends-article-header" href="#">
-                Поради з охорони здоров'я для домашніх тварин
-            </a>
-        </div>
-        <div class="recomends-center-col recomends-quote">
-            <div class="recomends-img-box scale-img" href="#">
-                <img src="<?php echo gd_get_img('S0wnWaZrlGZoe15AJqf_y4KnLTFGmKBk_IQt75YlEew.jpeg') ?>" alt="">
-                <blockquote>
-                    "Я перевiв Моллi на <i>NOW FRESH™ Grain Free Senior</i> після отримання інформації по електронній пошті
-                    від вашого представника... Тепер я впевнений, що вона отримує дiйсно хороше харчування. Це дуже важливо
-                    адже у неї діабет, а зараз її стан нарештi стабільний, і я можу бути спокiйний за її пiдшлункову залозу...
-                    <i>NOW FRESH ™ Grain Free Senior</i> чудово працює! Дякую!"
-                    <br>
-                    - Олександр
-                </blockquote>
-            </div>
-            <a class="recomends-article-links" href="#">
-                <ul class="inline-block-list article-nav recomends-links">
-                    <li class="inline-block-item">
-                        <a href="#">Коти</a>
-                    </li>
-                    <li class="inline-block-item">
-                        <a href="#">Собаки</a>
-                    </li>
-                    <li class="inline-block-item">
-                        <a href="#">Ваша iсторiя успiху</a>
-                    </li>
-                </ul>
-            </a>
-            <a class="recomends-article-header" href="#">
-                Читайте більше вiдгукiв від задоволених клієнтів
-            </a>
-        </div>
-        <div class="recomends-right-col recomends-article">
-            <div class="recomends-wrapper scale-img">
-                <img src="<?php echo gd_get_img('PileofDogs_V1.png') ?>" alt="">
-                <a class="recomends-img-box" href="#">
-                    <div class="recomends-txt">
-                        <p>[Читати статтю]</p>
-                    </div>
-                </a>
-
-            </div>
-            <a class="recomends-article-links" href="#">
-                <ul class="inline-block-list article-nav recomends-links">
-                    <li class="inline-block-item">
-                        <a href="#">Коти</a>
-                    </li>
-                    <li class="inline-block-item">
-                        <a href="#">Собаки</a>
-                    </li>
-                    <li class="inline-block-item">
-                        <a href="#">Ваша iсторiя успiху</a>
-                    </li>
-                </ul>
-            </a>
-            <a class="recomends-article-header" href="#">
-                Вибiр виду благодiйностi для безпритульних тварин
-            </a>
-        </div>
-    </div>
+    <?php get_template_part('parts/archive/post_list') ?>
 </main>
 
 <?php get_footer(); ?>
