@@ -71,8 +71,8 @@
     <section class="our-blog">
         <div class="wrapper our-blog-box">
             <div class="our-blog-left-col">
-                <a href="#" class="h2 our-blog-left-col-header">Читайте наш блог</a>
-                <a class="our-blog-left-col-label" href="#">
+                <a href="/category/bez-rubriki" class="h2 our-blog-left-col-header">Читайте наш блог</a>
+                <a class="our-blog-left-col-label" href="/category/bez-rubriki">
                     <img src="<?php echo gd_get_img('hot-off-the-press.png') ?>" alt="">
                 </a>
                 <article class="our-blog-article">

@@ -29,10 +29,15 @@
 
             <div class="article-authors-info">
                 <div class="article-authors-photo">
-                    <img src="<?php echo gd_get_img('Val-Blog.jpg')?: gd_get_img('fallback-avatar.jpg') ?>" alt="">
+<!--                    <img src="--><?php //echo gd_get_img('Val-Blog.jpg')?: gd_get_img('fallback-avatar.jpg') ?><!--" alt="">-->
+                    <?php
+                    $author_img = get_avatar(get_the_author_meta('ID'), 34);
+                        $author_link  = get_author_posts_url(get_the_author_meta('ID'));
+                        echo "<a href='".$author_link."' title='Автор поста'>".$author_img."</a>";
+                    ?>
                 </div>
                 <div class="article-authors-name">
-                    <span><?php echo "Тамара Петровна" ?></span>
+                    <?php the_author_meta('display_name', $post->post_author ); ?>
                 </div>
             </div>
             <div class="article-main-image">

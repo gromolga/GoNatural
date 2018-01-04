@@ -71,7 +71,7 @@
     <section class="our-blog">
         <div class="wrapper our-blog-box">
             <div class="our-blog-left-col">
-                <a href="#" class="h2 our-blog-left-col-header">Читайте наш блог</a>
+                <a href="/category/bez-rubriki" class="h2 our-blog-left-col-header">Читайте наш блог</a>
                 <article class="our-blog-article">
                     <div class="our-blog-article-img">
                         <img src="<?php echo gd_get_img('DogOrnament_V1.png') ?>" alt="">

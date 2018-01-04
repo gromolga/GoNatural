@@ -121,21 +121,53 @@ article.main-content {
     }
   }
 }
+.posts {
+  &-nav {
+    &-list {
+
+    }
+    &-item {
+      padding: 15px;
+      border-right: 1px solid silver;
+      a, span {
+        font-size: 18px;
+        color: $main-color;
+        transition: .3s;
+      }
+      a {
+        text-decoration: none;
+      }
+      i {
+        display: inline-block;
+        padding: 0 10px;
+        color: $light-main-color;
+        transition: .3s;
+      }
+      &:hover {
+        a {
+          color: $dark-main-color;
+          transition: .3s;
+        }
+        i {
+          color: $main-color;
+          transition: .3s;
+        }
+      }
+    }
+  }
+}
 .recomends {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: auto;
   margin-bottom: 70px;
-  width: calc(100% - 30px);
   &-wrapper {
     overflow: hidden;
   }
-  &-left-col,
-  &-center-col,
-  &-right-col {
-    width: calc(33.3% - 20px);
-  }
   &-article {
+    margin: 15px;
+    width: 360px;
     &-header {
       position: relative;
       display: block;
@@ -157,7 +189,7 @@ article.main-content {
     &-box {
       position: relative;
       display: flex;
-      height: 300px;
+      height: 235px;
       padding: 30px;
       align-content: center;
       overflow: hidden;
@@ -165,10 +197,6 @@ article.main-content {
       color: #fff;
       i {
         color: $main-color;
-      }
-      blockquote {
-        margin: auto;
-        font-size: 16px;
       }
     }
   }
@@ -217,40 +245,19 @@ article.main-content {
     transition: transform .5s;
   }
 }
+@media screen and (max-width: 1215px) {
+  .recomends {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 1070px) {
   .recomends {
-    &-left-col,
-    &-center-col,
-    &-right-col {
-      width: calc(33.3% - 10px);
-    }
     &-img-box {
-      height: 150px;
       padding: 10px;
-      blockquote {
-        font-size: 10px;
-      }
     }
   }
 }
 @media screen and (max-width: 725px) {
-  .recomends {
-    display: block;
-    &-left-col,
-    &-center-col,
-    &-right-col {
-      width: 100%;
-      max-width: 300px;
-      margin: auto;
-      margin-bottom: 15px;
-    }
-    &-img-box {
-      height: 200px;
-      blockquote {
-        font-size: 12px;
-      }
-    }
-  }
   .article {
     &-wrap {
       font-size: 16px;
@@ -263,5 +270,13 @@ article.main-content {
   }
   .article-nav li {
     padding: 0 5px;
+  }
+  .recomends {
+    &-article {
+      width: 280px;
+    }
+    &-img-box {
+      height: 200px;
+    }
   }
 }
