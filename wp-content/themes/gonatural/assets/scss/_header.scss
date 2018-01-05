@@ -20,15 +20,16 @@
       display: none;
     }
     img {
+      max-height: 58px;
       vertical-align: middle;
     }
   }
   &-nav {
     display: block;
     &-container {
-      float: right;
+      float: left;
       width: calc(100% - 200px);
-      text-align: right;
+      text-align: left;
     }
     &-list {
       ul {

@@ -26,6 +26,9 @@ $(function () {
     $(".product-navigation-left-col-img-box").hover(function() {
         $( ".product-navigation-left-col-img-box" ).not(this).toggleClass( "product-navigation-left-col-img-box-layout" );
     });
+    $(".product-item").hover(function() {
+        $( ".product-item" ).not(this).toggleClass( "product-item-layout" );
+    });
 
     // Аккордеон
 
@@ -40,6 +43,17 @@ $(function () {
         $(".accordeon-item.active .accordeon-item-dropdown").slideDown();
     });
 
+    // Плюсик в секции "развернуть"
+    $(".about-col-features-item").click(function () {
+        if($(this).hasClass('active')) {
+            $(".about-col-features-item").removeClass('active');
+        } else {
+            $(".about-col-features-item").removeClass('active');
+            $(this).addClass("active");
+        }
+        $(".about-col-features-item:not(.active) .about-col-more-txt").slideUp(300);
+        $(".about-col-features-item.active .about-col-more-txt").slideDown(300);
+    })
 
 })
 

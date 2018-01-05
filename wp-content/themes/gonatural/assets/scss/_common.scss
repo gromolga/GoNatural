@@ -59,6 +59,14 @@ input, button {
     &:hover {
       background-color: $hover-bg-btn-color;
     }
+    &-dark {
+      background-color: $main-color;
+      color: #fff;
+      &:hover {
+        background-color: $dark-main-color;
+        color: #fff;
+      }
+    }
   }
 }
 .scale-img:hover {
@@ -67,7 +75,12 @@ input, button {
     transition: transform .5s;
   }
 }
-
+.blockquote {
+  padding-left: 20px;
+  border-left: 3px solid $main-color;
+  color: $main-color;
+  font-weight: bold;
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {

@@ -1,7 +1,9 @@
 .footer {
-  padding: 20px 0;
-  text-align: center;
-  background-color: $footer-bg-color;
+  &-bottom {
+    padding: 20px 0;
+    text-align: center;
+    background-color: $footer-bg-color;
+  }
   &-top-menu {
     margin: 0;
     padding: 0;
@@ -53,6 +55,23 @@
       &:hover {
         color: #fff;
       }
+    }
+  }
+  &-top {
+    background-color: $sub-footer-bg-color;
+    &-social-icon {
+      height: 120px;
+      width: 120px;
+      border: 8px solid $sub-footer-border-color;
+      border-radius: 50%;
+      background-color: $footer-bg-color;
+    }
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      padding: 0 30px;
     }
   }
 }

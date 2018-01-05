@@ -30,7 +30,7 @@
         </div>
     </div>
 </div>
-<div class="product-description">
+<div class="product-description" style="background-image: url(<?php echo gd_get_img('Burlap-Cat-Kitten.jpg') ?>); background-size: cover;">
     <div class="wrapper product-description-flexbox">
         <div class="product-description-content">
             <h4 class="h4"><?php echo gd_get_post_option("small_header") ?></h4>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="product-description-img">
-            <img src="<?php echo gd_get_img('Summit-Cats-Indoor.png') ?>" alt="">
+            <img src="<?php echo gd_get_img('Now-Cat-Kitten.png') ?>" alt="">
         </div>
     </div>
 </div>

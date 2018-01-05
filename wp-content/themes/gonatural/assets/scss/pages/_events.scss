@@ -1,0 +1,58 @@
+.events {
+  &-wrapper {
+    padding: 30px 0;
+  }
+  &-banner {
+    min-height: 400px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $main-color;
+  }
+  &-txt {
+    padding: 0 15px;
+    box-sizing: border-box;
+    &-block {
+      margin-bottom: 30px;
+    }
+    &-header {
+      margin: 10px 0;
+    }
+    &-row {
+      display: flex;
+      padding: 20px 0;
+      border-top: 2px solid silver;
+    }
+  }
+  &-date {
+    width: 1000px;
+    text-align: center;
+    color: $main-color;
+    p {
+      margin: 5px 0;
+    }
+    &-accent {
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+  &-btn {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .events {
+    &-txt {
+      &-row {
+        flex-wrap: wrap;
+      }
+    }
+    &-date {
+      width: 100%;
+    }
+    &-btn {
+      margin: 15px 0;
+      width: 100%;
+    }
+  }
+}
