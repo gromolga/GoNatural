@@ -41,32 +41,32 @@
             </li>
             <?php endforeach; ?>
         </ul>
-        <div class="our-products-bottom-box">
-            <div class="wrapper our-products-bottom-box-content">
-                <div class="frame-3">
-                    <div class="frame-content-bottom">
-                        <ul class="frame-content-bottom-gallery">
-                            <?php $items = gd_get_option('our_bottom_products_items', array()); ?>
-                            <?php foreach ($items as $item): ?>
-                            <li class="our-products-bottom-box-img">
-                                <img src="<?php gd_eh_array(gd_get_array($item, 'img'), 'url') ?>" alt="">
-                            </li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <div class="our-products-bottom-content"><?php echo gd_get_option("our_bottom_products_header") ?></div>
-                    </div>
-                </div>
-                <div class="frame-4">
-                    <div class="frame-content">
-                        <h3 class="h3"><?php echo gd_get_option("our_products_bottom_frame_header") ?></h3>
-                        <p><?php echo gd_get_option("our_products_bottom_frame_txt") ?></p>
-                        <div class="main-btn">
-                            <a href="#" class="main-btn-box">Для собак</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="our-products-bottom-box">-->
+<!--            <div class="wrapper our-products-bottom-box-content">-->
+<!--                <div class="frame-3">-->
+<!--                    <div class="frame-content-bottom">-->
+<!--                        <ul class="frame-content-bottom-gallery">-->
+<!--                            --><?php //$items = gd_get_option('our_bottom_products_items', array()); ?>
+<!--                            --><?php //foreach ($items as $item): ?>
+<!--                            <li class="our-products-bottom-box-img">-->
+<!--                                <img src="--><?php //gd_eh_array(gd_get_array($item, 'img'), 'url') ?><!--" alt="">-->
+<!--                            </li>-->
+<!--                            --><?php //endforeach; ?>
+<!--                        </ul>-->
+<!--                        <div class="our-products-bottom-content">--><?php //echo gd_get_option("our_bottom_products_header") ?><!--</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="frame-4">-->
+<!--                    <div class="frame-content">-->
+<!--                        <h3 class="h3">--><?php //echo gd_get_option("our_products_bottom_frame_header") ?><!--</h3>-->
+<!--                        <p>--><?php //echo gd_get_option("our_products_bottom_frame_txt") ?><!--</p>-->
+<!--                        <div class="main-btn">-->
+<!--                            <a href="#" class="main-btn-box">Для собак</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </section>
     <section class="our-blog">
         <div class="wrapper our-blog-box">

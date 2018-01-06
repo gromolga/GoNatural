@@ -74,27 +74,34 @@
 </div>
 <div class="wrapper">
     <div class="product-grid">
-        <div class="product-item">
-            <a href="./product/kitten" class="product-item-content">
+        <a href="/product/now-fresh-grain-free-kitten-food" class="product-item">
+            <div class="product-item-content">
                 <img src="<?php echo gd_get_img('Now-Cat-Kitten.png') ?>" alt="">
                 <div class="product-item-header">Grain Free Kitten Food</div>
-                <span class="product-item-more">More info</span>
-            </a>
-        </div>
-        <div class="product-item">
-            <a href="./product/kitten" class="product-item-content">
+<!--                <span class="product-item-more">More info</span>-->
+            </div>
+        </a>
+        <a href="" class="product-item">
+            <div class="product-item-content">
                 <img src="<?php echo gd_get_img('NowFresh-Cat.png') ?>" alt="">
-                <div class="product-item-header">Grain Free Kitten Food</div>
-                <span class="product-item-more">More info</span>
-            </a>
-        </div>
-        <div class="product-item">
-            <a href="./product/kitten" class="product-item-content">
+                <div class="product-item-header">Grain Free Adult Food</div>
+<!--                <span class="product-item-more">More info</span>-->
+            </div>
+        </a>
+        <a href="" class="product-item">
+            <div class="product-item-content">
+                <img src="<?php echo gd_get_img('Now-Cat-Adult-Fish.png') ?>" alt="">
+                <div class="product-item-header">Grain Free Fish Recipe for Adult Cats</div>
+<!--                <span class="product-item-more">More info</span>-->
+            </div>
+        </a>
+        <a href="" class="product-item">
+            <div class="product-item-content">
                 <img src="<?php echo gd_get_img('Now-Cat-Senior.png') ?>" alt="">
-                <div class="product-item-header">Grain Free Kitten Food</div>
-                <span class="product-item-more">More info</span>
-            </a>
-        </div>
+                <div class="product-item-header">Grain Free Senior Cat Food Recipe</div>
+<!--                <span class="product-item-more">More info</span>-->
+            </div>
+        </a>
     </div>
 </div>
 <?php get_footer(); ?>

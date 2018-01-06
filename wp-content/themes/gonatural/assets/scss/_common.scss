@@ -7,6 +7,22 @@ body {
   font-family: "MEDIATORSERIF",sans-serif;
   overflow-x: hidden;
 }
+table {
+  margin: 30px 0;
+  width: 100% !important;
+  border-collapse: collapse;
+  color: $main-color;
+}
+table tr {
+  border-bottom: 1px solid silver;
+}
+table tr:first-of-type {
+  background-color: $main-color;
+  color: #fff;
+}
+table td {
+  padding: 0 10px;
+}
 .inline-block-list {
   margin: 0;
   padding: 0;

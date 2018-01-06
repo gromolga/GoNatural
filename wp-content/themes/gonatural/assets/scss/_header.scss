@@ -135,7 +135,7 @@
     text-align: left;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1199px) {
   .header {
     &-nav-container {
       float: none;
@@ -146,12 +146,9 @@
       float: none;
       margin: auto;
     }
-    &-top-line-img {
-      text-align: center;
-    }
   }
 }
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 991px) {
   .header {
     padding-top: 0;
     &-top-line-img {

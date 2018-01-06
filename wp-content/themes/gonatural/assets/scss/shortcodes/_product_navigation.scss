@@ -37,7 +37,7 @@
         display: inline-block;
         height: auto;
         width: 60px;
-        &:before {
+        a:after {
           content: '';
           position: absolute;
           left: 0;
@@ -50,7 +50,7 @@
         }
         &-layout {
           position: relative;
-          &:before {
+          a:after {
             opacity: 1;
             transition: opacity .3s;
           }
@@ -77,6 +77,9 @@
         transition: .3s;
       }
     }
+  }
+  a {
+    display: block;
   }
   &:before {
     content: '';

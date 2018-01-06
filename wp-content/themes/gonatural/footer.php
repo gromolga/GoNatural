@@ -5,7 +5,7 @@
                 <div class="footer-top-social-icon">
                     <img src="<?php echo gd_get_img('./mono-color-icons/cat.png') ?>" alt="">
                 </div>
-                <h5 class="h5">Обратная связь:</h5>
+                <h5 class="h5 footer-top-item-header">Зворотнiй зв'язок:</h5>
                 <a href="#">Call 1.866.864.6112</a>
                 <a href="#">Mail.example@gmail.com</a>
             </div>
@@ -13,14 +13,15 @@
                 <div class="footer-top-social-icon">
                     <img src="<?php echo gd_get_img('./mono-color-icons/cat.png') ?>" alt="">
                 </div>
-                <h5 class="h5">Наше местоположение:</h5>
-                <a href="#">Нажмите на ссылку для перехода</a>
+                <h5 class="h5 footer-top-item-header">Нашi магазини</h5>
+                <a href="#">Натиснiть для переходу на карту</a>
             </div>
             <div class="footer-top-item">
                 <div class="footer-top-social-icon">
                     <img src="<?php echo gd_get_img('./mono-color-icons/cat.png') ?>" alt="">
                 </div>
-                <h5 class="h5">Nutrition</h5>
+                <h5 class="h5 footer-top-item-header">Здоров'я та харчування</h5>
+                <a href="#">Натиснiть щоб переглянути вiдео</a>
             </div>
         </div>
     </div>

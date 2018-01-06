@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 <div class="about-banner-video">
-    <iframe width="100%" src="https://www.youtube.com/embed/CgnWg1tCaAg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/CgnWg1tCaAg?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 <div class="wrapper">
     <div class="about-col">
