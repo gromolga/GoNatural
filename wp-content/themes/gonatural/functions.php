@@ -61,6 +61,7 @@ function gd_get_js($path) {
     return gd_get_asset('js/' . $path);
 }
 
+require_once 'functions/lang.php';
 
 add_action( 'wp_enqueue_scripts', function(){
     wp_register_style( 'libs', gd_get_css('libs.min.css'));
@@ -142,7 +143,7 @@ function register_post_types()
         //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
         //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
         'hierarchical' => false,
-        'supports' => array('title', 'editor'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+        'supports' => array('title'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
         'taxonomies' => array(),
         'has_archive' => false,
         'rewrite' => true,

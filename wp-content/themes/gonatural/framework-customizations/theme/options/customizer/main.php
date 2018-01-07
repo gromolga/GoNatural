@@ -104,6 +104,14 @@ return array(
                         'size' => 'small',
                         'editor_type' => false,
                     ),
+                    'dogs_link' => array(
+                        'type' => 'text',
+                        'label' => 'Ссылка на страницу продукта для собак',
+                    ),
+                    'cats_link' => array(
+                        'type' => 'text',
+                        'label' => 'Ссылка на страницу продукта для котов',
+                    ),
                 ),
                 'template' => '{{- hover_header }}', // box title
                 'limit' => 50, // limit the number of boxes that can be added

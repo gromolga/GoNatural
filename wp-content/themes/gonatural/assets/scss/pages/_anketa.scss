@@ -1,0 +1,81 @@
+.anketa {
+  min-height: 200px;
+  padding: 50px 0;
+  background-color: $main-color;
+  color: #fff;
+  &-ribbon {
+    position: relative;
+    transform: rotate(-10deg);
+    float: left;
+    &-box {
+      position: relative;
+      &-content {
+        position: relative;
+        display: inline-block;
+        padding: 10px 50px 10px 20px;
+        font-size: 20px;
+        background-color: $sub-footer-border-color;
+        color: #fff;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+        }
+        &:before {
+          top: 44px;
+          left: 0;
+          width: 0;
+          height: 0;
+          border-top: 20px solid $footer-bg-color;
+          border-left: 20px solid transparent;
+        }
+        &:after {
+          transform: rotate(45deg);
+          top: 6px;
+          right: -15px;
+          height: 32px;
+          width: 32px;
+          background-color: $main-color;
+        }
+      }
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+      }
+      &:before {
+        left: -40px;
+        bottom: -20px;
+        height: 43px;
+        width: 60px;
+        background-color: $sub-footer-bg-color;
+      }
+      &:after {
+        left: -58px;
+        bottom: -15px;
+        transform: rotate(45deg);
+        display: block;
+        height: 32px;
+        width: 32px;
+        background-color: $main-color;
+      }
+    }
+  }
+
+  &-content {
+    margin: 30px 0;
+  }
+}
+.what-is, .right-food, .for-my-pet {
+  display: block;
+}
+.what-is {
+  font-size: 25px;
+}
+.right-food, .for-my-pet {
+  font-size: 35px;
+}
+.for {
+  font-size: 25px;
+  text-decoration: underline;
+}

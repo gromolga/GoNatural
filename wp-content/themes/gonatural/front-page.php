@@ -33,8 +33,8 @@
                         <h3 class="h3"><?php gd_eh_array($item, 'hover_header') ?></h3>
                         <p><?php gd_eh_array($item, 'hover_txt') ?></p>
                         <div class="main-btn">
-                            <a href="./now-fresh-dlya-kotiv/" class="main-btn-box">Для котiв</a>
-                            <a href="./now-fresh-dlya-sobak/" class="main-btn-box">Для собак</a>
+                            <a href="<?php gd_eh_array($item, 'dogs_link') ?>" class="main-btn-box">Для собак</a>
+                            <a href="<?php gd_eh_array($item, 'cats_link') ?>" class="main-btn-box">Для котiв</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
 <!--            </div>-->
 <!--        </div>-->
     </section>
-    <section class="our-blog">
+    <section class="our-blog" style="background: url(<?php echo gd_get_img('home-blog-posts-bg.jpg') ?>) center right no-repeat; background-size: contain;">
         <div class="wrapper our-blog-box">
             <div class="our-blog-left-col">
                 <a href="/category/bez-rubriki" class="h2 our-blog-left-col-header">Читайте наш блог</a>

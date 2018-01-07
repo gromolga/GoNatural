@@ -3,7 +3,7 @@
 <main class="main">
     <div class="main-banner blog-main-banner">
         <div class="owl-carousel main-banner-carousel blog-carousel">
-            <?php $items = gd_get_option('blog_slide', array()); ?>
+            <?php $items = gd_get_option_t('blog_slide', array()); ?>
             <?php foreach ($items as $item): ?>
                 <div class="blog-slide"
                      style="background-image: url('<?php gd_eh_array(gd_get_array($item, 'blog_slide_img'), 'url') ?>')">

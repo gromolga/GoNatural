@@ -3,10 +3,10 @@
     <div class="product-navigation">
         <div class="product-navigation-left-col">
             <div class="product-navigation-left-col-txt">
-                <?php echo gd_get_post_option("left_txt") ?>
+                <?php echo gd_get_post_option_t("left_txt") ?>
             </div>
             <div class="product-navigation-left-col-img">
-                <?php $img_items = gd_get_post_option('img_items'); ?>
+                <?php $img_items = gd_get_post_option_t('img_items'); ?>
                 <?php if($img_items) : ?>
                 <ul class="product-navigation-left-col-img-list">
                     <?php foreach ($img_items as $item): ?>
@@ -22,10 +22,10 @@
         </div>
         <div class="product-navigation-right-col">
             <div class="product-navigation-right-col-txt">
-                <?php echo gd_get_post_option("right_txt") ?>
+                <?php echo gd_get_post_option_t("right_txt") ?>
             </div>
             <div class="product-navigation-right-col-btn">
-                <a href="#"><?php echo gd_get_post_option("button_txt") ?></a>
+                <a href="#"><?php echo gd_get_post_option_t("button_txt") ?></a>
             </div>
         </div>
     </div>
@@ -33,9 +33,9 @@
 <div class="product-description" style="background-image: url(<?php echo gd_get_img('Burlap-Cat-Kitten.jpg') ?>); background-size: cover;">
     <div class="wrapper product-description-flexbox">
         <div class="product-description-content">
-            <h4 class="h4"><?php echo gd_get_post_option("small_header") ?></h4>
-            <h1 class="h1"><?php echo gd_get_post_option("large_header") ?></h1>
-            <p><?php echo gd_get_post_option("content") ?></p>
+            <h4 class="h4"><?php echo gd_get_post_option_t("small_header") ?></h4>
+            <h1 class="h1"><?php echo gd_get_post_option_t("large_header") ?></h1>
+            <p><?php echo gd_get_post_option_t("content") ?></p>
             <a class="main-btn" href="#">
                 <a class="main-btn-box">Where to buy</a>
             </a>

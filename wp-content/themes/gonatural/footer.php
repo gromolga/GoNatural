@@ -14,7 +14,7 @@
                     <img src="<?php echo gd_get_img('./mono-color-icons/cat.png') ?>" alt="">
                 </div>
                 <h5 class="h5 footer-top-item-header">Нашi магазини</h5>
-                <a href="#">Натиснiть для переходу на карту</a>
+                <a href="/de-kupiti/">Натиснiть для переходу на карту</a>
             </div>
             <div class="footer-top-item">
                 <div class="footer-top-social-icon">
@@ -22,6 +22,13 @@
                 </div>
                 <h5 class="h5 footer-top-item-header">Здоров'я та харчування</h5>
                 <a href="#">Натиснiть щоб переглянути вiдео</a>
+            </div>
+            <div class="footer-top-item">
+                <div class="footer-top-social-icon">
+                    <img src="<?php echo gd_get_img('./mono-color-icons/cat.png') ?>" alt="">
+                </div>
+                <h5 class="h5 footer-top-item-header">Запитання i вiдповiдi</h5>
+                <a href="/category/faq/">Перелiк найпоширенiших запитаннь i вiдповiдей на них</a>
             </div>
         </div>
     </div>
@@ -54,18 +61,18 @@
                 <?php endforeach; ?>
             </ul>
 
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'footer-bottom-menu',
-                'menu' => '',
-                'container' => 'div',
-                'container_class' => '',
-                'menu_class' => 'footer-bottom-menu',
-                'echo' => true,
-                'fallback_cb' => 'wp_page_menu',
-                'depth' => 1,
-            ));
-            ?>
+<!--            --><?php
+//            wp_nav_menu(array(
+//                'theme_location' => 'footer-bottom-menu',
+//                'menu' => '',
+//                'container' => 'div',
+//                'container_class' => '',
+//                'menu_class' => 'footer-bottom-menu',
+//                'echo' => true,
+//                'fallback_cb' => 'wp_page_menu',
+//                'depth' => 1,
+//            ));
+//            ?>
         </div>
     </div>
 </footer>
