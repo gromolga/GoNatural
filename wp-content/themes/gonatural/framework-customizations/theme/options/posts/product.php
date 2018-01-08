@@ -101,7 +101,7 @@ $options = array(
                     'left_txt_ru' => array(
                         'type' => 'text',
                         'label' => 'Текст левой колонки',
-                        'value' => 'Види продуктiв:'
+                        'value' => 'Виды продуктов:'
                     ),
                     'img_items_ru' => array(
                         'type' => 'addable-box',
@@ -119,12 +119,12 @@ $options = array(
                     'right_txt_ru' => array(
                         'type' => 'text',
                         'label' => 'Текст правой колонки',
-                        'value' => 'Потрiбна порада у виборi правильного харчування?'
+                        'value' => 'Необходима помощь в выборе правильного питания?'
                     ),
                     'button_txt_ru' => array(
                         'type' => 'text',
                         'label' => 'Текст кнопки',
-                        'value' => 'Скористайтеся нашим помiчником'
+                        'value' => 'Воспользуйтесь нашим помощником'
                     ),
                 ),
             ),
