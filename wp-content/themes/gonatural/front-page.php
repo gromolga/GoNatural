@@ -41,32 +41,6 @@
             </li>
             <?php endforeach; ?>
         </ul>
-<!--        <div class="our-products-bottom-box">-->
-<!--            <div class="wrapper our-products-bottom-box-content">-->
-<!--                <div class="frame-3">-->
-<!--                    <div class="frame-content-bottom">-->
-<!--                        <ul class="frame-content-bottom-gallery">-->
-<!--                            --><?php //$items = gd_get_option('our_bottom_products_items', array()); ?>
-<!--                            --><?php //foreach ($items as $item): ?>
-<!--                            <li class="our-products-bottom-box-img">-->
-<!--                                <img src="--><?php //gd_eh_array(gd_get_array($item, 'img'), 'url') ?><!--" alt="">-->
-<!--                            </li>-->
-<!--                            --><?php //endforeach; ?>
-<!--                        </ul>-->
-<!--                        <div class="our-products-bottom-content">--><?php //echo gd_get_option("our_bottom_products_header") ?><!--</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="frame-4">-->
-<!--                    <div class="frame-content">-->
-<!--                        <h3 class="h3">--><?php //echo gd_get_option("our_products_bottom_frame_header") ?><!--</h3>-->
-<!--                        <p>--><?php //echo gd_get_option("our_products_bottom_frame_txt") ?><!--</p>-->
-<!--                        <div class="main-btn">-->
-<!--                            <a href="#" class="main-btn-box">Для собак</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
     </section>
     <section class="our-blog" style="background: url(<?php echo gd_get_img('home-blog-posts-bg.jpg') ?>) center right no-repeat; background-size: contain;">
         <div class="wrapper our-blog-box">
@@ -75,24 +49,12 @@
                 <a class="our-blog-left-col-label" href="/category/vsi-rubriki">
                     <img src="<?php echo gd_get_img('hot-off-the-press.png') ?>" alt="">
                 </a>
-                <article class="our-blog-article">
-                    <div class="our-blog-article-img">
-                        <img src="<?php echo gd_get_img('DogOrnament_V1.png') ?>" alt="">
-                    </div>
-                    <div class="our-blog-article-txt">
-                        <a class="our-blog-article-link our-blog-article-link-top" href="/svyatkovij-etiket-dlya-tvarin">Святковий етикет для тварин</a>
-                        <a class="our-blog-article-link our-blog-article-link-bottom our-blog-box-link" href="/svyatkovij-etiket-dlya-tvarin">Читати більше</a>
-                    </div>
-                </article>
-                <article class="our-blog-article">
-                    <div class="our-blog-article-img">
-                        <img src="<?php echo gd_get_img('DogsLights_V1.png') ?>" alt="">
-                    </div>
-                    <div class="our-blog-article-txt">
-                        <a class="our-blog-article-link our-blog-article-link-top" href="/svyatkovi-poradi-dlya-tvarin/">Поради з охорони здоров'я для домашніх тварин</a>
-                        <a class="our-blog-article-link our-blog-article-link-bottom our-blog-box-link" href="/svyatkovi-poradi-dlya-tvarin/">Читати більше</a>
-                    </div>
-                </article>
+                <?php
+                $args = array('numberposts' => 2);
+                $posts = get_posts( $args );
+                foreach($posts as $post): setup_postdata($post);
+                    get_template_part("parts/home/post_item");
+                endforeach; wp_reset_postdata(); ?>
             </div>
             <div class="our-blog-right-col">
                 <div class="our-blog-box-link" href="#">

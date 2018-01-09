@@ -50,8 +50,16 @@
                 <div class="header-nav-container">
                     <div id="lang" class="lang">
                         <ul>
-                            <li <?php echo (gp_get_locale() != 'UA') ? 'onclick="setLocale(\'UA\')" class="current"' : ''; ?>><span>Українська</span></li>
-                            <li <?php echo (gp_get_locale() != 'RU') ? 'onclick="setLocale(\'RU\')"' : ''; ?>><span>Росйська</span></li>
+                            <li <?php echo (gd_get_locale() != 'UA') ? 'onclick="setLocale(\'UA\')"' : 'class="current"'; ?>>
+                                <span>
+                                    <?php echo (gd_get_locale() == 'UA') ? 'Українська' : 'Украинский'; ?>
+                                </span>
+                            </li>
+                            <li <?php echo (gd_get_locale() != 'RU') ? 'onclick="setLocale(\'RU\')"' : 'class="current"'; ?>>
+                                <span>
+                                     <?php echo (gd_get_locale() == 'UA') ? 'Росiйська' : 'Русский'; ?>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                     <?php

@@ -55,7 +55,7 @@
         <div class="wrapper">
             <?php
             wp_nav_menu(array(
-                'theme_location' => 'footer-top-menu',
+                'theme_location' => (gd_get_locale() == 'UA')?'footer-top-menu':'footer-top-menu_ru',
                 'menu' => '',
                 'container' => 'div',
                 'container_class' => '',

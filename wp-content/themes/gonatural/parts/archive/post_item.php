@@ -19,6 +19,6 @@
         </ul>
     </div>
     <a class="recomends-article-header" href="<?php the_permalink() ?>">
-        Поради з охорони здоров'я для домашніх тварин
+        <?php the_title() ?>
     </a>
 </div>

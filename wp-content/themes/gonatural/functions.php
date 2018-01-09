@@ -104,8 +104,10 @@ register_nav_menu( "header-nav-mobile", "Навигация шапки сайт�
 //register_nav_menu( "aside-articles", "Сайдбар (список статей)" );
 //register_nav_menu( "footer-languages", "Подвал страницы (языки)" );
 //register_nav_menu( "footer-services", "Подвал страницы (услуги)" );
-register_nav_menu( "footer-top-menu", "Верхнее меню в подвале страницы" );
-register_nav_menu( "footer-bottom-menu", "Нижнее меню в подвале страницы" );
+register_nav_menu( "footer-top-menu", "Верхнее меню в подвале страницы(UA)" );
+register_nav_menu( "footer-top-menu_ru", "Верхнее меню в подвале страницы(RU)" );
+register_nav_menu( "footer-bottom-menu", "Нижнее меню в подвале страницы(UA)" );
+register_nav_menu( "footer-bottom-menu_ru", "Нижнее меню в подвале страницы(RU)" );
 
 
 add_action('init', 'register_post_types');
