@@ -3,7 +3,7 @@
 <main class="main">
     <div class="main-banner">
         <div class="owl-carousel main-banner-carousel">
-            <?php $items = gd_get_option('main_banner_slide', array()); ?>
+            <?php $items = gd_get_option_t('main_banner_slide', array()); ?>
             <?php foreach ($items as $item): ?>
                 <div class="main-banner-slide" style="background-image: url('<?php gd_eh_array(gd_get_array($item, 'main_banner_img'), 'url') ?>')">
                     <div class="wrapper main-banner-slide-content">
@@ -71,7 +71,7 @@
     <section class="our-blog">
         <div class="wrapper our-blog-box">
             <div class="our-blog-left-col">
-                <a href="/category/bez-rubriki" class="h2 our-blog-left-col-header">Читайте наш блог</a>
+                <a href="/category/vsi-rubriki" class="h2 our-blog-left-col-header">Читайте наш блог</a>
                 <article class="our-blog-article">
                     <div class="our-blog-article-img">
                         <img src="<?php echo gd_get_img('DogOrnament_V1.png') ?>" alt="">

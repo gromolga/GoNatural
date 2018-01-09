@@ -48,6 +48,12 @@
                     <strong>Petcurean</strong>
                 </a>
                 <div class="header-nav-container">
+                    <div id="lang" class="lang">
+                        <ul>
+                            <li <?php echo (gp_get_locale() != 'UA') ? 'onclick="setLocale(\'UA\')" class="current"' : ''; ?>><span>Українська</span></li>
+                            <li <?php echo (gp_get_locale() != 'RU') ? 'onclick="setLocale(\'RU\')"' : ''; ?>><span>Росйська</span></li>
+                        </ul>
+                    </div>
                     <?php
                     wp_nav_menu( array(
                         'theme_location'  => 'header-nav',
@@ -68,12 +74,7 @@
         </div>
     </div>
 
-    <div id="lang">
-        <ul>
-            <li <?php echo (gp_get_locale() != 'UA') ? 'onclick="setLocale(\'UA\')" class="current"' : ''; ?>><span>Ua</span></li>
-            <li <?php echo (gp_get_locale() != 'RU') ? 'onclick="setLocale(\'RU\')"' : ''; ?>><span>Ru</span></li>
-        </ul>
-    </div>
+
 
     <script>
 

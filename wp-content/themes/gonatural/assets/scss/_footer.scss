@@ -61,20 +61,31 @@
     padding: 30px 0;
     background-color: $sub-footer-bg-color;
     &-social-icon {
+      position: relative;
       height: 120px;
       width: 120px;
       margin: auto;
       border: 8px solid $sub-footer-border-color;
       border-radius: 50%;
       background-color: $footer-bg-color;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100px;
+      }
     }
     &-list {
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
     }
     &-item {
       margin: 15px 0;
       padding: 0 30px;
+      width: 250px;
       text-align: center;
       &-header {
         margin: 10px 0;
@@ -93,6 +104,11 @@
   .footer {
     &-top-list {
       display: block;
+    }
+    &-top {
+      &-item {
+        margin: 15px auto;
+      }
     }
   }
 }

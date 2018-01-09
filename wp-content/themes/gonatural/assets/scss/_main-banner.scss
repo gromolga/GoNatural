@@ -32,6 +32,21 @@
     background-color: #fff;
   }
 }
+@media screen and (max-width: 670px) {
+  .main-banner {
+    &-slide-content-header {
+      font-size: 34px;
+    }
+  }
+  .our-products {
+    .our-products-container {
+      display: block;
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+}
 @media screen and (max-width: 470px) {
   .main-banner {
     &-slide {

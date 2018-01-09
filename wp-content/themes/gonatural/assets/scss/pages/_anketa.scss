@@ -60,10 +60,67 @@
         background-color: $main-color;
       }
     }
+    &-content {
+      margin: 30px 0;
+    }
   }
-
-  &-content {
-    margin: 30px 0;
+  &-questions {
+    float: right;
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    &-txt {
+      font-size: 25px;
+    }
+    &-img {
+      display: flex;
+      align-items: center;
+      &-box {
+        position: relative;
+        margin: 10px;
+        display: block;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #fff;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 80px;
+        }
+      }
+    }
+  }
+  &-name {
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+    .h1 {
+      color: #fff;
+    }
+    &-input {
+      padding: 10px;
+      border: 3px solid $dark-main-color;
+      background-color: $light-main-color;
+    }
+    ::-webkit-input-placeholder {
+      color:#fff;
+      text-align: center;
+    }
+    ::-moz-placeholder {
+      color:#fff;
+      text-align: center;
+    }/* Firefox 19+ */
+    :-moz-placeholder {
+      color:#fff;
+      text-align: center;
+    }/* Firefox 18- */
+    :-ms-input-placeholder {
+      color:#fff;
+      text-align: center;
+    }
   }
 }
 .what-is, .right-food, .for-my-pet {
@@ -78,4 +135,32 @@
 .for {
   font-size: 25px;
   text-decoration: underline;
+}
+@media screen and (max-width: 1250px) {
+  .anketa {
+    &-ribbon {
+      float: none;
+      width: 300px;
+      margin: auto;
+    }
+    &-questions {
+      float: none;
+      max-width: 720px;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width: 565px) {
+  .anketa {
+    &-questions {
+      &-img-box {
+        margin: 5px;
+        height: 80px;
+        width: 80px;
+      }
+      &-txt {
+        font-size: 16px;
+      }
+    }
+  }
 }

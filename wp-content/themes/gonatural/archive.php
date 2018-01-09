@@ -10,7 +10,7 @@
                     <div class="wrapper main-banner-slide-content blog-slide-content">
                         <h2 class="h2 main-banner-slide-content-header blog-slide-header"> <?php gd_eh_array($item, 'blog_slide_header') ?></h2>
                         <div class="main-btn">
-                            <a class="main-btn-box" href="#"> <?php gd_eh_array($item, 'blog_slide_btn') ?></a>
+                            <a class="main-btn-box" href="<?php gd_eh_array($item, 'blog_slide_link') ?>"> <?php gd_eh_array($item, 'blog_slide_btn') ?></a>
                         </div>
                     </div>
                 </div>

@@ -17,14 +17,14 @@ return array(
                     ),
                     'blog_slide_header' => array(
                         'type' => 'textarea',
-                        'label' => 'Заголовок слайда'
+                        'label' => 'Ищете помощь в выборе правильного питания?'
                     ),
                     'blog_slide_btn' => array(
                         'type' => 'textarea',
-                        'label' => 'Текст кнопки слайда'
+                        'label' => 'Нажмите для перехода'
                     ),
                 ),
-                'template' => '{{- main_banner_slide_header }}', // box title
+                'template' => '{{- blog_slide_header }}', // box title
                 'limit' => 50, // limit the number of boxes that can be added
                 'add-button-text' => 'Добавить новый слайд',
                 'sortable' => true,

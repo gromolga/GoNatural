@@ -1,9 +1,9 @@
 <?php
 
 return array(
-    'main_banner' => array(
+    'main_banner_slider' => array(
         'type' => 'box',
-        'title' => 'Слайдер на главной странице',
+        'title' => 'Слайдер на главной странице (UA)',
         'options' => array(
             'main_banner_slide' => array(
                 'type' => 'addable-box',
@@ -22,6 +22,10 @@ return array(
                     'main_banner_slide_btn' => array(
                         'type' => 'textarea',
                         'label' => 'Текст кнопки слайда'
+                    ),
+                    'main_banner_link' => array(
+                        'type' => 'textarea',
+                        'label' => 'Ссылка на желаемую страницу'
                     ),
                 ),
                 'template' => '{{- main_banner_slide_header }}', // box title
@@ -118,39 +122,6 @@ return array(
             ),
         ),
     ),
-    'our_bottom_products' => array(
-        'type' => 'box',
-        'title' => 'Нижняя секция продуктов',
-        'options' => array(
-            'our_bottom_products_header' => array(
-                'type' => 'text',
-                'label' => 'Текст нижней секции с продуктами'
-            ),
-            'our_bottom_products_items' => array(
-                'type' => 'addable-box',
-                'label' => 'Пункты списка',
-                'box-options' => array(
-                    'img' => array(
-                        'type' => 'upload',
-                        'label' => 'Изображение продукта',
-                        'images_only' => true,
-                        'files_ext' => array('png', 'jpeg', 'jpg', 'svg', 'gif'),
-                    ),
-                ),
-                'template' => 'Картинка продукта', // box title
-                'help'  => __('Всего можно ввести не более четырех продуктов', '{domain}'),
-                'limit' => 4, // limit the number of boxes that can be added
-            ),
-            'our_products_bottom_frame_header' => array(
-                'type' => 'text',
-                'label' => 'Заголовок нижней секции с продуктами'
-            ),
-            'our_products_bottom_frame_txt' => array(
-                'type' => 'textarea',
-                'label' => 'Текст нижней секции с продуктами'
-            ),
-        ),
-    ),
     'our_blog' => array(
         'type' => 'box',
         'title' => 'Наш блог',
@@ -161,6 +132,4 @@ return array(
             ),
         ),
     ),
-
-
 );

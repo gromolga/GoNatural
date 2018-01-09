@@ -15,12 +15,12 @@
             <div class="product-navigation-left-col-img">
                 <ul class="product-navigation-left-col-img-list">
                     <li class="product-navigation-left-col-img-box">
-                        <a href="#">
+                        <a href="/now-fresh-dlya-kotiv/">
                             <img src="<?php echo gd_get_img('NowFresh-Cat.png') ?>" alt="">
                         </a>
                     </li>
                     <li class="product-navigation-left-col-img-box">
-                        <a href="#">
+                        <a href="/go-dlya-kotiv/">
                             <img src="<?php echo gd_get_img('GO-Cat.png') ?>" alt="">
                         </a>
                     </li>

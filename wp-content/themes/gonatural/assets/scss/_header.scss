@@ -1,5 +1,18 @@
 .header {
   padding-top: 10px;
+  .lang {
+    float: left;
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    ul {
+      list-style-type: none;
+    }
+    span {
+      color: $main-color;
+      cursor: pointer;
+    }
+  }
   &-top-line {
     position: relative;
     z-index: 10;
@@ -15,7 +28,7 @@
     display: block;
     float: left;
     line-height: 80px;
-    width: 200px;
+    width: 150px;
     strong {
       display: none;
     }
@@ -28,7 +41,7 @@
     display: block;
     &-container {
       float: left;
-      width: calc(100% - 200px);
+      width: calc(100% - 155px);
       text-align: left;
     }
     &-list {
@@ -44,7 +57,7 @@
         margin-top: 0;
         padding: 10px 15px;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 15px;
         color: $base-color;
         transition: ease .5s;
         text-decoration: none;
@@ -126,16 +139,11 @@
 .menu-navigaciya-v-shapke-sajta-container {
   float: left;
   margin: 7px 0 0 0;
-  width: calc(100% - 35px);
+  width: calc(100% - 135px);
   padding: 0 15px;
   box-sizing: border-box;
 }
-@media screen and (max-width: 1200px) {
-  .menu-navigaciya-v-shapke-sajta-container {
-    text-align: left;
-  }
-}
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1210px) {
   .header {
     &-nav-container {
       float: none;
@@ -148,9 +156,12 @@
     }
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1050px) {
   .header {
     padding-top: 0;
+    .lang {
+      padding: 0;
+    }
     &-top-line-img {
       display: none;
     }
@@ -275,7 +286,11 @@
       }
     }
   }
-
-
-
+}
+@media screen and (max-width: 380px) {
+  .header {
+    &-logo {
+      width: 105px;
+    }
+  }
 }
