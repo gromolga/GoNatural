@@ -50,8 +50,8 @@
                     <div class="about-col-features-item-img">
                         <img src="<?php echo gd_get_img('mono-color-icons/Bone.png') ?>" alt="">
                     </div>
-                    <h6 class="h6 about-col-features-item-header">Family owned & fiercely independent</h6>
-                    <p>With every decision we make, every recipe we create, we put pets first</p>
+                    <h6 class="h6 about-col-features-item-header">З теплим вiдношенням до тварин</h6>
+                    <p>При розробцi корму здоров'я тварин для нас - найголовнiше</p>
                     <div class="about-col-features-item-header about-col-more">
                         <span>Читати більше</span>
                         <div class="about-col-more-txt">
@@ -110,8 +110,8 @@
                     <div class="about-col-features-item-img">
                         <img src="<?php echo gd_get_img('mono-color-icons/Bone.png') ?>" alt="">
                     </div>
-                    <h6 class="h6 about-col-features-item-header">Family owned & fiercely independent</h6>
-                    <p>With every decision we make, every recipe we create, we put pets first</p>
+                    <h6 class="h6 about-col-features-item-header">Преміальні інгредієнти вiд надійних поставникiв</h6>
+                    <p>Ми використовуємо тiльки найкращi інгредієнти</p>
                     <div class="about-col-features-item-header about-col-more">
                         <span>Читати більше</span>
                         <div class="about-col-more-txt">
@@ -127,8 +127,8 @@
                     <div class="about-col-features-item-img">
                         <img src="<?php echo gd_get_img('mono-color-icons/Bone.png') ?>" alt="">
                     </div>
-                    <h6 class="h6 about-col-features-item-header">Family owned & fiercely independent</h6>
-                    <p>With every decision we make, every recipe we create, we put pets first</p>
+                    <h6 class="h6 about-col-features-item-header">З гордiстю з Канади</h6>
+                    <p>Ми Канадiйцi i ми виготовляємо корм з 1999 року</p>
                     <div class="about-col-features-item-header about-col-more">
                         <span>Читати більше</span>
                         <div class="about-col-more-txt">
@@ -144,8 +144,8 @@
                     <div class="about-col-features-item-img">
                         <img src="<?php echo gd_get_img('mono-color-icons/Bone.png') ?>" alt="">
                     </div>
-                    <h6 class="h6 about-col-features-item-header">Family owned & fiercely independent</h6>
-                    <p>With every decision we make, every recipe we create, we put pets first</p>
+                    <h6 class="h6 about-col-features-item-header">Перегляньте наше вiдео</h6>
+                    <p>Натиснiть для того щоб переглянути наше нове вiдео</p>
                     <div class="about-col-features-item-header about-col-more">
                         <span>Читати більше</span>
                         <div class="about-col-more-txt">

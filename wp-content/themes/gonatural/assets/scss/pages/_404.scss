@@ -1,0 +1,31 @@
+.banner-404 {
+  position: relative;
+  height: 800px;
+  text-align: center;
+  background-size: cover;
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  &-btn-box {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    .main-btn-box {
+      margin: 10px 5px;
+      width: 260px;
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+  &-header {
+    font-size: 60px;
+  }
+  .h1 {
+    margin: 15px auto;
+    color: #fff;
+  }
+}

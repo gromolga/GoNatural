@@ -64,7 +64,7 @@
                     </div>
                     <?php
                     wp_nav_menu( array(
-                        'theme_location'  => 'header-nav',
+                        'theme_location'  => (gd_get_locale() == 'UA')?'header-nav':'header-nav_ru',
                         'menu'            => '',
                         'container'       => 'div',
                         'container_class' => '',

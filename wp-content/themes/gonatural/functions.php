@@ -97,13 +97,10 @@ add_action( 'wp_enqueue_scripts', function(){
     wp_enqueue_script( 'main' );
 });
 
-register_nav_menu( "header-nav", "Навигация шапки сайта" );
-register_nav_menu( "header-nav-mobile", "Навигация шапки сайта (мобильная версия)" );
-//register_nav_menu( "languages-nav", "Список языков" );
-//register_nav_menu( "aside-nav", "Сайдбар (боковое меню)" );
-//register_nav_menu( "aside-articles", "Сайдбар (список статей)" );
-//register_nav_menu( "footer-languages", "Подвал страницы (языки)" );
-//register_nav_menu( "footer-services", "Подвал страницы (услуги)" );
+register_nav_menu( "header-nav", "Навигация шапки сайта(UA)" );
+register_nav_menu( "header-nav_ru", "Навигация шапки сайта(RU)" );
+register_nav_menu( "header-nav-mobile", "Навигация шапки сайта (мобильная версия)(UA)" );
+register_nav_menu( "header-nav-mobile", "Навигация шапки сайта (мобильная версия)(RU)" );
 register_nav_menu( "footer-top-menu", "Верхнее меню в подвале страницы(UA)" );
 register_nav_menu( "footer-top-menu_ru", "Верхнее меню в подвале страницы(RU)" );
 register_nav_menu( "footer-bottom-menu", "Нижнее меню в подвале страницы(UA)" );

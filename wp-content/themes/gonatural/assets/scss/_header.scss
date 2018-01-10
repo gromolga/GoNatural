@@ -8,9 +8,12 @@
     ul {
       list-style-type: none;
     }
-    span {
+    li {
       color: $main-color;
       cursor: pointer;
+    }
+    .current {
+      text-decoration: underline;
     }
   }
   &-top-line {
@@ -136,7 +139,7 @@
   :-moz-placeholder           {color:$main-color;}/* Firefox 18- */
   :-ms-input-placeholder      {color:$main-color;}
 }
-.menu-navigaciya-v-shapke-sajta-container {
+.menu-navigaciya-v-shapke-sajta-container, .menu-navigaciya-shapki-sajtaru-container {
   float: left;
   margin: 7px 0 0 0;
   width: calc(100% - 135px);
@@ -271,7 +274,8 @@
       transition: .3s;
     }
   }
-  .menu-navigaciya-v-shapke-sajta-container {
+  .menu-navigaciya-v-shapke-sajta-container,
+  .menu-navigaciya-shapki-sajtaru-container {
     display: none;
   }
 }

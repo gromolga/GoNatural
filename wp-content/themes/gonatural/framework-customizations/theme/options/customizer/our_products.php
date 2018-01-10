@@ -1,46 +1,16 @@
 <?php
 
 return array(
-    'main_banner_slider_ru' => array(
+    'our_products' => array(
         'type' => 'box',
-        'title' => 'Слайдер на главной странице (RU)',
+        'title' => 'Секция продуктов (UA)',
         'options' => array(
-            'main_banner_slide_ru' => array(
-                'type' => 'addable-box',
-                'label' => 'Содержимое слайдов',
-                'box-options' => array(
-                    'main_banner_img' => array(
-                        'type' => 'upload',
-                        'label' => 'Изображение слайда',
-                        'images_only' => true,
-                        'files_ext' => array('png', 'jpeg', 'jpg', 'svg', 'gif'),
-                    ),
-                    'main_banner_slide_header' => array(
-                        'type' => 'textarea',
-                        'label' => 'Заголовок слайда'
-                    ),
-                    'main_banner_slide_btn' => array(
-                        'type' => 'textarea',
-                        'label' => 'Текст кнопки слайда'
-                    ),
-                ),
-                'template' => '{{- main_banner_slide_header }}', // box title
-                'limit' => 50, // limit the number of boxes that can be added
-                'add-button-text' => 'Добавить новый слайд',
-                'sortable' => true,
-            ),
-        ),
-    ),
-    'our_products_ru' => array(
-        'type' => 'box',
-        'title' => 'Секция продуктов',
-        'options' => array(
-            'our_products_header_ru' => array(
+            'our_products_header' => array(
                 'type' => 'text',
                 'label' => 'Заголовок',
                 'value' => 'Наші продукти'
             ),
-            'our_products_items_ru' => array(
+            'our_products_items' => array(
                 'type' => 'addable-box',
                 'value' => array(
                     array(
@@ -115,16 +85,6 @@ return array(
                 ),
                 'template' => '{{- hover_header }}', // box title
                 'limit' => 50, // limit the number of boxes that can be added
-            ),
-        ),
-    ),
-    'our_blog_ru' => array(
-        'type' => 'box',
-        'title' => 'Наш блог',
-        'options' => array(
-            'our_blog_header_ru' => array(
-                'type' => 'text',
-                'label' => 'Заголовок секции'
             ),
         ),
     ),

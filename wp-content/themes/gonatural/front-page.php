@@ -17,9 +17,9 @@
         </div>
     </div>
     <section class="our-products">
-        <h2 class="h2"><?php echo gd_get_option("our_products_header") ?></h2>
+        <h2 class="h2"><?php echo gd_get_option_t("our_products_header") ?></h2>
         <ul class="our-products-container clearfix">
-            <?php $items = gd_get_option('our_products_items', array()); ?>
+            <?php $items = gd_get_option_t('our_products_items', array()); ?>
             <?php foreach ($items as $item): ?>
             <li class="our-products-item" style="background: <?php gd_eh_array($item, 'bg-color') ?>; background-image: url('<?php gd_eh_array(gd_get_array($item, 'bg'), 'url') ?>')">
                 <div class="frame-1">
@@ -42,10 +42,10 @@
             <?php endforeach; ?>
         </ul>
     </section>
-    <section class="our-blog" style="background: url(<?php echo gd_get_img('home-blog-posts-bg.jpg') ?>) center right no-repeat; background-size: contain;">
+    <section class="our-blog" style="background: url(<?php echo gd_get_img('home-blog-posts-bg.jpg') ?>) center right no-repeat #fff; background-size: contain;">
         <div class="wrapper our-blog-box">
             <div class="our-blog-left-col">
-                <a href="/category/vsi-rubriki" class="h2 our-blog-left-col-header">Читайте наш блог</a>
+                <a href="/category/vsi-rubriki" class="h2 our-blog-left-col-header"><?php echo gd_get_option_t("our_blog_header") ?></a>
                 <a class="our-blog-left-col-label" href="/category/vsi-rubriki">
                     <img src="<?php echo gd_get_img('hot-off-the-press.png') ?>" alt="">
                 </a>
@@ -58,8 +58,8 @@
             </div>
             <div class="our-blog-right-col">
                 <div class="our-blog-box-link" href="#">
-                    <a href="" class="h2 our-blog-right-col-header">Вибір правильної їжі для вашого вихованця може бути складним завданням</a>
-                    <a href="" class="our-blog-article-link our-blog-article-link-bottom our-blog-box-link">Перейти до ознайомлення з рiзноманiттям кормiв Petcurean</a>
+                    <a href="" class="h2 our-blog-right-col-header"><?php echo gd_get_option_t("our_blog_right_header") ?></a>
+                    <a href="" class="our-blog-article-link our-blog-article-link-bottom our-blog-box-link"><?php echo gd_get_option_t("our_blog_right_txt") ?></a>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-top">
         <div class="footer-top-list">
-            <?php $items = gd_get_option('footer-top-items', array()); ?>
+            <?php $items = gd_get_option_t('footer-top-items', array()); ?>
             <?php foreach ($items as $item): ?>
                 <div class="footer-top-item">
                     <div class="footer-top-social-icon">
@@ -11,44 +11,6 @@
                     <a href="<?php gd_eh_array($item, 'link-back') ?>"><?php gd_eh_array($item, 'link-front') ?></a>
                 </div>
             <?php endforeach; ?>
-
-
-
-
-
-
-<!--            <div class="footer-top-item">-->
-<!--                <div class="footer-top-social-icon">-->
-<!--                    <img src="--><?php //echo gd_get_img('./mono-color-icons/cat.png') ?><!--" alt="">-->
-<!--                </div>-->
-<!--                <h5 class="h5 footer-top-item-header">Зворотнiй зв'язок:</h5>-->
-<!--                <a href="#">Call 1.866.864.6112</a>-->
-<!--                <a href="#">Mail.example@gmail.com</a>-->
-<!--            </div>-->
-<!--            <div class="footer-top-item">-->
-<!--                <div class="footer-top-social-icon">-->
-<!--                    <img src="--><?php //echo gd_get_img('./mono-color-icons/cat.png') ?><!--" alt="">-->
-<!--                </div>-->
-<!--                <h5 class="h5 footer-top-item-header">Нашi магазини</h5>-->
-<!--                <a href="/de-kupiti/">Натиснiть для переходу на карту</a>-->
-<!--            </div>-->
-<!--            <div class="footer-top-item">-->
-<!--                <div class="footer-top-social-icon">-->
-<!--                    <img src="--><?php //echo gd_get_img('./mono-color-icons/cat.png') ?><!--" alt="">-->
-<!--                </div>-->
-<!--                <h5 class="h5 footer-top-item-header">Здоров'я та харчування</h5>-->
-<!--                <a href="#">Натиснiть щоб переглянути вiдео</a>-->
-<!--            </div>-->
-<!--            <div class="footer-top-item">-->
-<!--                <div class="footer-top-social-icon">-->
-<!--                    <img src="--><?php //echo gd_get_img('./mono-color-icons/cat.png') ?><!--" alt="">-->
-<!--                </div>-->
-<!--                <h5 class="h5 footer-top-item-header">Запитання i вiдповiдi</h5>-->
-<!--                <a href="/category/faq/">Перелiк найпоширенiших запитаннь i вiдповiдей на них</a>-->
-<!--            </div>-->
-
-
-
         </div>
     </div>
     <div class="footer-bottom">
@@ -65,7 +27,6 @@
                 'depth' => 1,
             ));
             ?>
-
             <?php $items = gd_get_option('footer-social', array()); ?>
             <ul class="footer-social-list">
                 <?php foreach ($items as $item): ?>
@@ -79,19 +40,18 @@
                     </li>
                 <?php endforeach; ?>
             </ul>
-
-<!--            --><?php
-//            wp_nav_menu(array(
-//                'theme_location' => 'footer-bottom-menu',
-//                'menu' => '',
-//                'container' => 'div',
-//                'container_class' => '',
-//                'menu_class' => 'footer-bottom-menu',
-//                'echo' => true,
-//                'fallback_cb' => 'wp_page_menu',
-//                'depth' => 1,
-//            ));
-//            ?>
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'footer-bottom-menu',
+                'menu' => '',
+                'container' => 'div',
+                'container_class' => '',
+                'menu_class' => 'footer-bottom-menu',
+                'echo' => true,
+                'fallback_cb' => 'wp_page_menu',
+                'depth' => 1,
+            ));
+            ?>
         </div>
     </div>
 </footer>

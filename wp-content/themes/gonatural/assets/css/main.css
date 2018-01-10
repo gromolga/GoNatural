@@ -130,6 +130,37 @@ input, button {
   color: #dd6f27;
   font-weight: bold; }
 
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer; }
+  .close:before, .close:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    height: 2px;
+    width: 25px;
+    background-color: #fff; }
+  .close:before {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .close:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .close:hover {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Gotham Pro",serif;
@@ -187,9 +218,11 @@ h6, .h6 {
     text-align: center; }
     .header .lang ul {
       list-style-type: none; }
-    .header .lang span {
+    .header .lang li {
       color: #dd6f27;
       cursor: pointer; }
+    .header .lang .current {
+      text-decoration: underline; }
   .header-top-line {
     position: relative;
     z-index: 10;
@@ -305,7 +338,7 @@ h6, .h6 {
   .header :-ms-input-placeholder {
     color: #dd6f27; }
 
-.menu-navigaciya-v-shapke-sajta-container {
+.menu-navigaciya-v-shapke-sajta-container, .menu-navigaciya-shapki-sajtaru-container {
   float: left;
   margin: 7px 0 0 0;
   width: -webkit-calc(100% - 135px);
@@ -425,7 +458,8 @@ h6, .h6 {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
-  .menu-navigaciya-v-shapke-sajta-container {
+  .menu-navigaciya-v-shapke-sajta-container,
+  .menu-navigaciya-shapki-sajtaru-container {
     display: none; } }
 
 @media screen and (max-width: 485px) {
@@ -1615,7 +1649,8 @@ article.main-content {
     font-size: 16px;
     color: #dd6f27;
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    z-index: 10; }
     .about-col-more:before {
       content: '+';
       position: absolute;
@@ -1862,6 +1897,7 @@ article.main-content {
     text-decoration: none; }
 
 .anketa {
+  position: relative;
   min-height: 200px;
   padding: 50px 0;
   background-color: #dd6f27;
@@ -1939,19 +1975,36 @@ article.main-content {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      -webkit-box-align: start;
+      -webkit-align-items: start;
+          -ms-flex-align: start;
+              align-items: start;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
       .anketa-questions-img-box {
         position: relative;
-        margin: 10px;
+        margin: 10px auto;
         display: block;
         height: 120px;
         width: 120px;
         -webkit-border-radius: 50%;
                 border-radius: 50%;
-        background-color: #fff; }
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border: 7px solid transparent;
+        background-color: #fff;
+        cursor: pointer; }
+        .anketa-questions-img-box:hover {
+          border: 7px solid #f9893f;
+          background-color: rgba(255, 255, 255, 0.9);
+          -webkit-transition: 1s;
+          -o-transition: 1s;
+          transition: 1s; }
         .anketa-questions-img-box img {
           position: absolute;
           top: 50%;
@@ -1960,18 +2013,63 @@ article.main-content {
               -ms-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%);
           max-width: 80px; }
+        .anketa-questions-img-box-wrapper {
+          width: 200px;
+          text-align: center; }
+          .anketa-questions-img-box-wrapper-small {
+            width: 140px; }
+          .anketa-questions-img-box-wrapper span {
+            display: block;
+            font-size: 20px;
+            font-weight: bold; }
   .anketa-name {
+    position: relative;
     padding: 80px 0;
     text-align: center;
+    background-color: #dd6f27;
     color: #fff;
     /* Firefox 19+ */
     /* Firefox 18- */ }
-    .anketa-name .h1 {
-      color: #fff; }
     .anketa-name-input {
-      padding: 10px;
+      display: block;
+      margin: auto;
+      padding: 15px 20px;
+      font-size: 40px;
       border: 3px solid #9f4e19;
+      color: #fff;
       background-color: #f9893f; }
+    .anketa-name-submit {
+      position: relative;
+      display: inline-block;
+      margin: 40px auto; }
+      .anketa-name-submit-box {
+        display: block;
+        padding: 10px 60px 10px 20px;
+        font-size: 20px;
+        border: none;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.6);
+        cursor: pointer; }
+      .anketa-name-submit:before, .anketa-name-submit:after {
+        content: '';
+        position: absolute; }
+      .anketa-name-submit:before {
+        top: 50%;
+        right: 20px;
+        height: 2px;
+        width: 15px;
+        background-color: #dd6f27; }
+      .anketa-name-submit:after {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: 17px;
+        right: 20px;
+        height: 8px;
+        width: 8px;
+        border-top: 2px solid #dd6f27;
+        border-right: 2px solid #dd6f27; }
     .anketa-name ::-webkit-input-placeholder {
       color: #fff;
       text-align: center; }
@@ -1984,6 +2082,24 @@ article.main-content {
     .anketa-name :-ms-input-placeholder {
       color: #fff;
       text-align: center; }
+  .anketa-custom-header {
+    color: #fff; }
+  .anketa-wrapper-centered {
+    text-align: center; }
+    .anketa-wrapper-centered .anketa-questions-img {
+      margin: auto; }
+  .anketa-answer {
+    padding: 50px 15px;
+    font-size: 20px;
+    text-align: center; }
+    .anketa-answer .h1 {
+      line-height: 1; }
+    .anketa-answer .product-navigation-right-col-btn {
+      display: inline-block;
+      margin: 15px 0;
+      width: auto; }
+      .anketa-answer .product-navigation-right-col-btn a {
+        padding: 15px 50px; }
 
 .what-is, .right-food, .for-my-pet {
   display: block; }
@@ -2005,13 +2121,54 @@ article.main-content {
     margin: auto; }
   .anketa-questions {
     float: none;
-    max-width: 720px;
     margin: auto; } }
 
 @media screen and (max-width: 565px) {
-  .anketa-questions-img-box {
-    margin: 5px;
-    height: 80px;
-    width: 80px; }
-  .anketa-questions-txt {
-    font-size: 16px; } }
+  .anketa-questions {
+    display: block; }
+    .anketa-questions-txt {
+      margin-bottom: 20px;
+      font-size: 18px;
+      text-align: center; }
+  .anketa-name-input {
+    padding: 10px;
+    font-size: 20px; }
+  .anketa-answer .h1 {
+    font-size: 20px; }
+  .close {
+    right: 15px; } }
+
+.banner-404 {
+  position: relative;
+  height: 800px;
+  text-align: center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .banner-404-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%; }
+  .banner-404-btn-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15px auto; }
+    .banner-404-btn-box .main-btn-box {
+      margin: 10px 5px;
+      width: 260px;
+      text-align: center;
+      font-size: 15px; }
+  .banner-404-header {
+    font-size: 60px; }
+  .banner-404 .h1 {
+    margin: 15px auto;
+    color: #fff; }
